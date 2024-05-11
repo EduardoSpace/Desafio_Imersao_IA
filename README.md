@@ -2,21 +2,22 @@
 
 ## Sobre o Projeto
 
-Este projeto é o resultado de um desafio proposto no programa **#Imersão Inteligência Artificial 2ª Edição**, oferecida pela Alura em parceria com o Google. O objetivo deste projeto foi desenvolver uma solução, para processar imagens de câmeras de segurança a fim de detectar pessoas (utilizando a API do Google AI) e enviar alertas através do Telegram.
+Este projeto é o resultado de um desafio proposto no programa **#Imersão Inteligência Artificial 2ª Edição**, oferecida pela Alura em parceria com o Google. O objetivo deste projeto foi desenvolver uma solução, para tornar câmeras IPs, DVRs e NVRs de baixo custo em dispositivos "smart" processando imagens das câmeras a fim de detectar intrusos (utilizando a API do Google AI) para o envio de alertas através do Telegram.
 
 ##  Arquitetura da Solução
 ![Arquitetura da Solução](https://drive.google.com/thumbnail?id=1Jy1A89XIDrYfQcnkb-PePTfdmrFTVzvs&sz=w1000)
 
 ##  Motivação
-Atualmente, muitas residências e empresas possuem câmeras de segurança. Uma funcionalidade muito desejada é a de detectar pessoas e alertar os proprietários. Isso é muito útil para pessoas que possuem imóveis que ficam vazios por um período de tempo.
-A maioria das câmeras de segurança residenciais carece de recursos para detecção de pessoas (esse é um recurso  geralmente presente em equipamentos mais caros). Alguns modelos até oferecem essa funcionalidade como um serviço adicional, cobrado através de uma assinatura mensal, cujo custo pode ser considerado elevado. 
+Atualmente, muitas residências e empresas possuem câmeras de segurança. Uma funcionalidade muito desejada é a de detectar pessoas e alertar os proprietários. Isso é muito útil para pessoas que possuem imóveis rurais ou que ficam vazios por um período de tempo.
+A maioria das câmeras de segurança residenciais, DVRs e NVRs carecem de recursos para detecção de pessoas (esse é um recurso  geralmente presente em equipamentos mais caros). Alguns modelos até oferecem essa funcionalidade como um serviço adicional pela cloud, que é cobrado através de uma assinatura mensal e de elevado custo.
+
 A grande maioria dos modelos é capaz de detectar movimentos (independente do tipo). Isso resulta em uma quantidade significativa de alertas classificados como falsos positivos, uma vez que qualquer movimento - seja de árvores, plantas, animais ou até mesmo das nuvens - pode originar um alerta (que pode ser um e-mail, ou uma notificação através de um aplicativo instalado em um smartphone). 
-Um fato relevante é que quase todos os modelos de câmeras IP residenciais podem ser configuradas para quando na ocorrência de uma detecção de movimento enviarem imagens do momento exato de detecção por e-mail ou FTP. Entretanto, muitos usuários acabam deixando essa opção desativada devido a grande taxa de falsos positivos.
-A utilização de inteligência artificial para detectar pessoas nas imagens é uma solução de baixo custo que permite que os usuários mantenham suas câmeras antigas e ainda assim consigam ser notificados quando um indivíduo suspeito entrar em sua propriedade.
+Um fato relevante é que quase todos os modelos de câmeras, DVRs e NVRs residenciais podem ser configuradas para quando na ocorrência de uma detecção de movimento enviarem imagens do momento exato de detecção por FTP. Entretanto, muitos usuários acabam deixando essa opção desativada devido a grande taxa de falsos positivos que iria receber e por não terem conhecimento de como instalar e/ou acessar um servidor FTP.
+A solução aqui apresentada, utiliza inteligência artificial para detectar pessoas nas imagens, e não exige aquisição de novas câmeras, DVRs ou NVRs. Além disso, permite que as imagens com alertas de indivíduos suspeitos sejam recebidas diretamente em seu smartphone através do Telegram.
 
 ##  Funcionalidades
 
--   **Servidor FTP para recebimento de imagens de câmeras IP**  
+-   **Servidor FTP para recebimento de imagens de câmeras IP, DVRs ou NVRs**  
 -   **Detecção de pessoas em imagens utilizando API generativeai** 
 -   **Envio de mensagens de alertas com imagens pelo Telegram** 
 
@@ -29,8 +30,8 @@ A utilização de inteligência artificial para detectar pessoas nas imagens é 
 
 ## Objetivos e Vantagens
 
--   **Ampla compatibilidade:**  A solução é compatível com a maioria das câmeras IPs evitando necessidade de troca ou de aquisição de novas câmeras.
--   **Baixo custo:**  A solução envolve apenas o pagamento de utilização da API que é um custo relativamente baixo se comparado à aquisição de novos equipamentos ou à assinatura de serviços de cloud com esse serviço de visão computacional embutido.
+-   **Ampla compatibilidade:**  A solução é compatível com a maioria das câmeras IPs, DVRs e NVRs evitando necessidade de troca ou de aquisição de novas câmeras.
+-   **Baixo custo:**  A solução envolve apenas o pagamento de utilização da API que é um custo relativamente baixo se comparado à aquisição de novos equipamentos e/ou à assinatura de serviços de cloud com esse serviço de visão computacional embutido.
 -   **Alertas por smartphones:** A solução notifica os usuários diretamente pelo Telegram em seus smartphones
 
 ## Como executar
